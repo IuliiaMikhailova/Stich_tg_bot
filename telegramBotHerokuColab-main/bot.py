@@ -12,12 +12,12 @@ def welcome(message):
 
 	#клавиатура
 	markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
-	item1 = types.KeyboardButton("🧡 Репозиторий Лило")
-	item2 = types.KeyboardButton("😋 Напиши ей в личку")
+	item1 = types.KeyboardButton("🧡 Мой репозиторий")
+	item2 = types.KeyboardButton("😋 Напиши мне в личку")
 
 	markup.add(item1, item2)
 
-	bot.send_message(message.chat.id, "Привет тебе от Стича, {0.first_name}! Знакомься с моей Лило.".format(message.from_user, bot.get_me()),
+	bot.send_message(message.chat.id, "Привет тебе от Стича, {0.first_name}!".format(message.from_user, bot.get_me()),
 		parse_mode='html', reply_markup=markup)
 
 #назначаем действие для клавиатуры
