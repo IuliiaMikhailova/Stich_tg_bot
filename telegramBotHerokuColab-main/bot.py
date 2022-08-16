@@ -1,5 +1,5 @@
 import telebot
-TOKEN = 'Вставьте токен'
+TOKEN = '5432712667:AAHmf46jUPR1pNMm8xtPXyNLzvz9L9TT34c'
 
 from telebot import types
 
@@ -24,9 +24,9 @@ def welcome(message):
 @bot.message_handler(content_types=['text'])
 def lalala(message):
 	if message.chat.type == 'private':
-		if message.text == '🧡 Репозиторий Лило':
+		if message.text == '🧡 Мой репозиторий':
 			bot.send_message(message.chat.id, 'https://github.com/IuliiaMikhailova')
-		elif message.text == '😋 Напиши ей в личку':
+		elif message.text == '😋 Напиши мне в личку':
 			bot.send_message(message.chat.id, 'http://t.me/jullia_cherr')
 		else:
 			bot.send_message(message.chat.id, 'Не знаю что ответить😢')
