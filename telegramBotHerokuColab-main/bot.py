@@ -1,5 +1,5 @@
 import telebot
-TOKEN = '5432712667:AAHmf46jUPR1pNMm8xtPXyNLzvz9L9TT34c'
+TOKEN = 'Вставь сюда токен'
 
 from telebot import types
 
